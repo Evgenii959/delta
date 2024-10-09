@@ -14,64 +14,71 @@
         <thead>
           <tr>
             <th>Показатель</th>
-            <th>Текущий день</th>
+            <th class="today">Текущий день</th>
             <th>Вчера</th>
             <th>Этот день недели</th>
           </tr>
         </thead>
+        <tbody>
           <tr data-values="[500521, 480521, 4805121]">
             <td>Выручка руб</td>
-            <td>500521</td>
+            <td class="today">500521</td>
             <td>480521</td>
             <td>4805121</td>
           </tr>
-        </tbody>
-          <div id="chart-container"></div>
+          <tr>
+            <td class="chart" colspan="4">
+              <div
+                id="chart-container"
+                style="width: 100%; height: 400px"
+              ></div>
+            </td>
+          </tr>
           <tr data-values="[300000, 300000, 300000]">
             <td>Наличные</td>
-            <td>300000</td>
+            <td class="today">300000</td>
             <td>300000</td>
             <td>300000</td>
           </tr>
           <tr data-values="[100521, 100521, 100521]">
             <td>Кредитные карты</td>
-            <td>100521</td>
+            <td class="today">100521</td>
             <td>100521</td>
             <td>100521</td>
           </tr>
           <tr data-values="[1300, 900, 900]">
             <td>Средний чек. руб</td>
-            <td>1300</td>
+            <td class="today">1300</td>
             <td>900</td>
             <td>900</td>
           </tr>
           <tr data-values="[1200, 800, 800]">
             <td>Средний гость. руб</td>
-            <td>1200</td>
+            <td class="today">1200</td>
             <td>800</td>
             <td>800</td>
           </tr>
           <tr data-values="[1000, 1100, 900]">
             <td>Удаление из чека (после оплаты). руб</td>
-            <td>1000</td>
+            <td class="today">1000</td>
             <td>1100</td>
             <td>900</td>
           </tr>
           <tr data-values="[1300, 1300, 900]">
             <td>Удаление из чека (до оплаты). руб</td>
-            <td>1300</td>
+            <td class="today">1300</td>
             <td>1300</td>
             <td>900</td>
           </tr>
-                    <tr data-values="[34, 36, 34]">
+          <tr data-values="[34, 36, 34]">
             <td>Количество чеков</td>
-            <td>34</td>
+            <td class="today">34</td>
             <td>36</td>
             <td>34</td>
           </tr>
-                    <tr data-values="[34, 36, 32]">
+          <tr data-values="[34, 36, 32]">
             <td>Количество гостей</td>
-            <td>34</td>
+            <td class="today">34</td>
             <td>36</td>
             <td>32</td>
           </tr>
