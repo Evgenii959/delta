@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Table with Chart</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Table</h1>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Показатель</th>
+            <th>Текущий день</th>
+            <th>Вчера</th>
+            <th>Этот день недели</th>
+          </tr>
+        </thead>
+          <tr data-values="[500521, 480521, 4805121]">
+            <td>Выручка руб</td>
+            <td>500521</td>
+            <td>480521</td>
+            <td>4805121</td>
+          </tr>
+        </tbody>
+          <div id="chart-container"></div>
+          <tr data-values="[300000, 300000, 300000]">
+            <td>Наличные</td>
+            <td>300000</td>
+            <td>300000</td>
+            <td>300000</td>
+          </tr>
+          <tr data-values="[100521, 100521, 100521]">
+            <td>Кредитные карты</td>
+            <td>100521</td>
+            <td>100521</td>
+            <td>100521</td>
+          </tr>
+          <tr data-values="[1300, 900, 900]">
+            <td>Средний чек. руб</td>
+            <td>1300</td>
+            <td>900</td>
+            <td>900</td>
+          </tr>
+          <tr data-values="[1200, 800, 800]">
+            <td>Средний гость. руб</td>
+            <td>1200</td>
+            <td>800</td>
+            <td>800</td>
+          </tr>
+          <tr data-values="[1000, 1100, 900]">
+            <td>Удаление из чека (после оплаты). руб</td>
+            <td>1000</td>
+            <td>1100</td>
+            <td>900</td>
+          </tr>
+          <tr data-values="[1300, 1300, 900]">
+            <td>Удаление из чека (до оплаты). руб</td>
+            <td>1300</td>
+            <td>1300</td>
+            <td>900</td>
+          </tr>
+                    <tr data-values="[34, 36, 34]">
+            <td>Количество чеков</td>
+            <td>34</td>
+            <td>36</td>
+            <td>34</td>
+          </tr>
+                    <tr data-values="[34, 36, 32]">
+            <td>Количество гостей</td>
+            <td>34</td>
+            <td>36</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
